@@ -26,7 +26,8 @@ public class AnimationEventOpr : MonoBehaviour
     {
         if (audioSource != null && !string.IsNullOrEmpty(audioPath))
         {
-            AudioClip audioClip = TGameCore.GetIntance().GetResourceMgr().GetResourceByPath<AudioClip>(audioPath);
+            //AudioClip audioClip = TGameCore.GetIntance().GetResourceMgr().GetResourceByPath<AudioClip>(audioPath);
+            AudioClip audioClip=null;
             audioSource.clip = audioClip;
             audioSource.Play();
         }
